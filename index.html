@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
-    <script src="js/scripts.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Pig-Dice</title>
-  </head>
-  <body>
-<div class="container">
-<div class="row">
-  <div class="col-md-12">
+<head>
+  <meta charset="utf-8">
+  <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Pig-Dice</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Pig-Dice</h1>
+        <p><a href="../pig-dice/index.html"><button type="button" id="newGame" class="btn btn-primary">New Game</button></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 playera player1">
+        <h4>Player One:</h4>
+        <p>Score: <span id="player1Score"></span></p>
+      </div>
+      <div class="col-lg-2">
 
-  <h1>Pig-Dice</h1>
-  <p><button type="button" id="newGame" class="btn btn-primary">New Game</button></p>
-</div>
-
-</div>
-<div class="row">
-  <div class="col-lg-6">
-    <h4>Player One:</h4>
-    <p>Score: <span id="player1Score"></span></p>
+      </div>
+      <div class="col-lg-5 playerb">
+        <h4>Player Two:</h4>
+        <p>Score: <span id="player2Score"></span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="buttons"><button type="button" id="rollDice" class="btn btn-danger">Roll again!</button></p>
+        <p class="buttons">Count: <span class="diceCount"></span></p>
+        <p class="buttons"><button type="button" id="holdDice" class="btn btn-warning">HOLD!</button></p>
+      </div>
+    </div>
   </div>
-  <div class="col-lg-6">
-    <h4>Player Two:</h4>
-    <p>Score: <span id="player2Score"></span></p>
-
-  </div>
-
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <button type="button" id="rollDice" class="btn btn-danger">Roll again!</button><br>
-    <p>Count: <span class="diceCount"></span></p>
-    <button type="button" id="holdDice" class="btn btn-warning">HOLD!</button>
-  </div>
-</div>
-
-
-
-</div>
-  </body>
+</body>
 </html>
